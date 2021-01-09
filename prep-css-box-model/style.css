@@ -1,0 +1,13 @@
+* {
+  text-align: center;
+}
+
+button {
+  background-color: red;
+  color: white;
+
+  /* 👇 YOUR CODE HERE 👇 */
+  margin: 20px;
+  padding: 10px;
+  border: 3px double darkgray;
+}
