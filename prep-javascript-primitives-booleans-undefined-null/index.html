@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Primitive Data Types - Boolean Undefined Null</title>
+</head>
+
+<body>
+  <script>
+    //Your code here
+    var favoriteItem = "Car",
+    price = 3.5
+    isLaptop = Boolean(favoriteItem == "laptop");
+
+    console.log("Is my favorite item a laptop?", isLaptop);
+
+    console.log("isLaptop type:", typeof isLaptop);
+
+    var isExpensive = Boolean(price > 500)
+
+    console.log("Is my favorite item expensive?", isExpensive);
+
+    var isCheap = Boolean(price < 500);
+
+    console.log("Is my favorite item cheap?", isCheap);
+
+    var undefinedVariable;
+
+    console.log("Undefined variable:", undefinedVariable);
+
+    var nullVariable = null;
+
+    console.log("Null variable:", nullVariable);
+
+  </script>
+</body>
+
+</html>
