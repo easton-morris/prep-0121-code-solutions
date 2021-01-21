@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Manipulation - 2</title>
+  <style>
+    .container {
+      text-align: center;
+    }
+
+    .heading {
+      background-color: blueviolet;
+    }
+
+    .navbar > * {
+      background-color: blue;
+      display: inline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <h1>JavaScript Dom Manipulation!</h1>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Products</li>
+          <li>Contact</li>
+          <li>About</li>
+        </ul>
+      </nav>
+    </header>
+  </main>
+
+  <script>
+    // Your code here
+    var main = document.querySelector('main');
+
+    main.className = 'container';
+
+    var header = document.querySelector('header');
+
+    header.className = 'heading';
+
+    var nav = document.querySelector('ul');
+
+    nav.className = "navbar";
+
+
+  </script>
+</body>
+
+</html>
