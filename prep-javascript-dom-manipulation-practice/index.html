@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Manipulation - 3</title>
+  <style>
+    main {
+      text-align: center;
+    }
+
+    ul > * {
+      display: inline;
+      margin-left: 15px;
+    }
+
+    ul > *:hover {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <h1>JavaScript Dom Manipulation 3</h1>
+      <nav>
+        <ul>
+          <li class="home">Home</li>
+          <li class="products">Products</li>
+          <li class="contact">Contact</li>
+          <li class="about">About</li>
+        </ul>
+      </nav>
+    </header>
+  </main>
+
+  <script>
+    var home = document.querySelector('.home');
+    var products = document.querySelector('.products');
+    var contact = document.querySelector('.contact');
+    var about = document.querySelector('.about');
+
+    var h1 = document.querySelector('h1');
+
+    home.addEventListener('click', function () {
+      // Your code here
+      h1.textContent = 'Home Page';
+    });
+
+    products.addEventListener('click', function () {
+      // Your code here
+      h1.textContent = 'Products Page';
+    });
+
+    contact.addEventListener('click', function () {
+      // Your code here
+      h1.textContent = 'Contact Page';
+    });
+
+    about.addEventListener('click', function () {
+      // Your code here
+      h1.textContent = 'About Page';
+    });
+  </script>
+</body>
+
+</html>
