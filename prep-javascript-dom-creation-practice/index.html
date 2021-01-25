@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript DOM Creation - 2</title>
+  <style>
+    .square {
+      height: 100px;
+      width: 100px;
+      border: 2px solid white;
+      background-color: purple;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Squares R Us</h1>
+  <div>
+    <button class="add-a-square">Add a Square</button>
+  </div>
+  <div class="square-container">
+  </div>
+  <script>
+    var button = document.querySelector('.add-a-square');
+    var squareContainer = document.querySelector('.square-container');
+
+    button.addEventListener('click', addSquare);
+
+    function addSquare() {
+      // Your code here
+      var square = document.createElement('div');
+      square.classList.add('square');
+      squareContainer.appendChild(square);
+    }
+  </script>
+</body>
+
+</html>
